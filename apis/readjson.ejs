@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Users Favourite Colours</h2>
+
+</body>
+Right Answers
+<table border=1><tr><th>Name</th><th>Email</th><th>Answer</th></tr>
+<% for (let i = 0; i < right.length; i++) { %>
+  <tr>
+    <td>
+      <%= right[i]["name"] %>
+    </td>
+    <td>
+      <%= right[i]["email"] %>
+    </td>
+    <td>
+      <%= right[i]["answer"] %>
+    </td>
+  </tr>
+<% } %>
+</table>
+</br>
+Wrong Answers
+<table border=1><tr><th>Name</th><th>Email</th><th>Answer</th></tr>
+<% for (let i = 0; i < wrong.length; i++) { %>
+  <tr>
+    <td>
+      <%= wrong[i]["name"] %>
+    </td>
+    <td>
+      <%= wrong[i]["email"] %>
+    </td>
+    <td>
+      <%= wrong[i]["answer"] %>
+    </td>
+  </tr>
+<% } %>
+</table>
+</html>
+
